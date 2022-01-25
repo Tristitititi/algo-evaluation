@@ -70,10 +70,10 @@ function pyramide(hauteur) {
     var newTable = [];
     for (var i = 0; i < hauteur; i++) {
         var starCount = i*2+1
-        var lengthBase = (hauteur-1)*2-1
+        var lengthBase = (hauteur-1)*2+1
         var spaces = (lengthBase - starCount)/2
 
-        var str = ' '
+        var str = ''
         str += ' '.repeat(spaces)
         str += '*'.repeat(starCount)
         str += ' '.repeat(spaces)
